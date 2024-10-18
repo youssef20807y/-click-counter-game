@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Counter Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Click Counter Game</h1>
+
+        <nav>
+            <ul id="menu">
+                <li><a href="#" onclick="showSection('game')">Game</a></li>
+                <li><a href="#" onclick="showSection('instructions')">Instructions</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div id="gameSection" class="section hidden">
+            <p id="score">Click Count: 0</p>
+            <button id="startButton">Start Game</button>
+            <button id="clickButton" class="hidden">Click Here!</button>
+            <p id="timer">Time Left: 10</p>
+            <div id="highScoresContainer" class="hidden">
+                <h2>High Scores:</h2>
+                <ul id="highScoresList"></ul>
+            </div>
+            <div id="nameInputContainer" class="hidden">
+                <label for="username">Enter your name:</label>
+                <input type="text" id="username" placeholder="Your Name">
+                <button id="submitNameButton">Submit</button>
+            </div>
+        </div>
+
+        <div id="instructionsSection" class="section hidden">
+            <h2>Instructions</h2>
+            <p>Click the button as many times as you can within 10 seconds!</p>
+            <p>Enter your name after the time is up to record your score.</p>
+        </div>
+
+        <div id="contactSection" class="section hidden">
+            <h2>Contact</h2>
+            <p>If you have any questions, please reach out to us at support@clickcounter.com</p>
+        </div>
+
+        <div id="footer">
+            <p>Have fun and good luck!</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

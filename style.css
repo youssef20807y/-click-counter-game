@@ -1,0 +1,87 @@
+body {
+    background-color: #282c34;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #3c3f44;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 36px;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #61dafb;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #21a1f1;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #61dafb;
+    border: none;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 20px 0;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #21a1f1;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.hidden {
+    display: none;
+}
+
+.section {
+    margin-top: 20px;
+}
+
+#highScoresList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#highScoresList li {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+#footer {
+    margin-top: 20px;
+    font-size: 14px;
+}
